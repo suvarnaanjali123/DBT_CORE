@@ -4,4 +4,5 @@ sources:
     database: DEVELOPER_DB
     schema: ANJALI_SCHEMA
     tables:
-      - name: US_ACCIDENT_DATA_RAW_STAGE
+      - name: US_ACCIDENTS_DATA_RAW_STAGE
+      - name: STAGE_US_DATA
