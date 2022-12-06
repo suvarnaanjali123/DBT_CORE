@@ -1,0 +1,40 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+
+#  - name: ACCIDENT_ADDRESS_DIM
+#    description: "A starter dbt model"
+#    config:
+#      meta:
+#        surrogate_key: true
+#    columns:
+#      - name: CITY, COUNTRY, STATE, ZIPCODE, COUNTY, TIMEZONE, AIRPORT_CODE, STREET,LODE_TIME, ADD_ID
+#        description: "The primary key for this table"
+#        tests:
+#          - unique
+#          - not_null
+
+#  - name: dim_customers
+#    description: all customers
+#    config:
+#      meta:
+#        surrogate_key: true
